@@ -8,7 +8,7 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(input
 
 通过源码分析，build 方法将 xml 格式的配置信息转为 Java 的一个对象（Configuration），从而影响 MyBatis 的行为。
 
-
+![image-20220630114332520](https://raw.githubusercontent.com/caogy/blogimg/main/data/image-20220630114332520.32q1atneurw0.webp)
 
 ### XML 配置文件
 
