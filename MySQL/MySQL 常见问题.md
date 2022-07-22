@@ -1,13 +1,13 @@
 
 # 常见问题 FAQ
 
-## mysqldump 
+## mysqldump
 
-### 使用 PowerShell 导出中文乱码问题
+### 1、使用 PowerShell 导出中文乱码问题
 
 改为使用 cmd 命令行导出。
 
-### 异常 Unknown table 'column_statistics' in information_schema
+### 2、异常 Unknown table 'column_statistics' in information_schema
 
 这是因为 `column-statistics` 在 mysqldump 8 是默认启用的。使用高版本的 mysqldump 连接低版本的 mysql 时报异常。
 

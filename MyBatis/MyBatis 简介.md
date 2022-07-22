@@ -1,3 +1,5 @@
+# MyBatis 简介
+
 每个基于 MyBatis 的应用都是一个 SqlSessionFactory 的实例为核心，SqlSessionFactoryBuilder 可以从 XML 配置文件或一个预先配置的 Configuration 对象来构建 SqlSessionFactory 实例。
 
 ``` java
@@ -10,7 +12,7 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(input
 
 ![image-20220630114332520](/image/mybatis.webp)
 
-### XML 配置文件
+## XML 配置文件
 
 配置文件结构如下：
 
@@ -34,7 +36,8 @@ SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(input
         </environment>
     </environments>
     <databaseIdProvider />
-    <mappers />
+    <mappers>
+        <!---->
+    </mappers>
 </configuration>
 ```
-

@@ -9,7 +9,7 @@
 - 关闭服务：sudo service mysql stop
 - 重启服务：sudo service mysql restart
 - 连接：mysql -u root -P 3306 -h localhost -p
-- 连接字符串：jdbc:msql://localhost:3306/databaseName?serverTimeZone=UTC
+- 连接字符串：jdbc:mysql://localhost:3306/databaseName?serverTimeZone=UTC
 - 列出数据库：show databases;
 - 选择数据库：use databaseName;
 - 列出数据表：show tables;
