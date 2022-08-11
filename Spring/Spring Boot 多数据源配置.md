@@ -231,21 +231,28 @@ public class UserService {
 运行 test 查看输入。
 
 ``` java
-@Test
-public void testMultiDataSource() {
-    System.out.println("showMasterTime：");
-    userService.showMasterTime();
+@SpringBootTest
+class DynamicDatasourceApplicationTests {
 
-    System.out.println("showSlaveTime：");
-    userService.showSlaveTime();
-    
-    System.out.println("showDefaultTime：");
-    userService.showDefaultTime();
-    
-    //使用方法内手动切换数据源
-    System.out.println("showExtTime：");
-    RoutingDataSourceContext.setDataSourceRoutingKey("slave");
-    userService.showExtTime();
+    @Autowired
+    UserService userService;
+
+    @Test
+    public void testMultiDataSource() {
+        System.out.println("showMasterTime：");
+        userService.showMasterTime();
+
+        System.out.println("showSlaveTime：");
+        userService.showSlaveTime();
+
+        System.out.println("showDefaultTime：");
+        userService.showDefaultTime();
+
+        //使用方法内手动切换数据源
+        System.out.println("showExtTime：");
+        RoutingDataSourceContext.setDataSourceRoutingKey("slave");
+        userService.showExtTime();
+    }
 }
 ```
 
@@ -267,3 +274,7 @@ showExtTime：
 jdbc:mysql://localhost:3380/mk_slave?serverTimeZone=UTC
 {now=2022-08-01T15:37:20}
 ```
+
+## 集成 Mybatis
+
+详见仓库 [dynamic-datasource](https://github.com/caogy/dynamic-datasource)。
