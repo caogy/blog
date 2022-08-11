@@ -1,6 +1,10 @@
 # blog
 
-学习笔记
+记录自己学习与思考的过程。
+
+## Java
+
+[基础-日期与时间](/Java/Java%20%E5%9F%BA%E7%A1%80%20%E6%97%A5%E6%9C%9F%E4%B8%8E%E6%97%B6%E9%97%B4.md)
 
 ## MyBatis
 
@@ -8,7 +12,7 @@
 
 ## MySQL
 
-[MySQL 必知必会](/MySQL/MySQL%20%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md)
+[[读书笔记] MySQL 必知必会](/MySQL/MySQL%20%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A.md)
 
 [MySQL 编码](/MySQL/MySQL%20%E7%BC%96%E7%A0%81.md)
 
@@ -16,7 +20,7 @@
 
 ## Maven
 
-[Maven 实战](/Maven/Maven%20%E5%AE%9E%E6%88%98.md)
+[[读书笔记] Maven 实战](/Maven/Maven%20%E5%AE%9E%E6%88%98.md)
 
 ## Spring
 
